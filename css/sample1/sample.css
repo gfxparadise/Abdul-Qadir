@@ -1,0 +1,45 @@
+.container {
+    margin-top: 10%;
+}
+
+.portfolio .box-container {
+    color: white;
+    text-align: center;
+   
+}
+
+.portfolio .box-container .box img {
+    width: 100%;
+    height: auto;
+}
+
+.img-text,
+.portfolio .box-container .box :after {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.portfolio .box-container.box :after {
+    content: "";
+    height: 100%;
+    top: 0;
+    transition: 5s;
+}
+
+.portfolio .box-container .box:hover:after {
+    background: linear-gradient(to bottom, rgba(199, 0, 57, .01) 0, rgba(199, 0, 57, .25) 25%, rgba(199, 0, 57, .50) 50%, rgba(199, 0, 57, .75) 75%, rgba(199, 0, 57, .95) 100%)
+}
+
+.img-text {
+    padding: 20px;
+    margin: 20px;
+    bottom: 0;
+    z-index: 1;
+    transform: translateY(145px);
+    transition: all .5 cubic-bezier(.13, .62, .81, .91)0s;
+}
+
+.portfolio .box-container .box:hover  .img-text{
+    transform: translateY(0);
+}
