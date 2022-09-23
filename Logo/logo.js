@@ -1832,3 +1832,8 @@ function closeNav() {
   document.getElementById("B").style.marginLeft = "0";
   document.getElementById("menu-bars1").style.opacity="100";
 }
+
+window.oncontextmenu =function(){ 
+  alert("This operation is not allowed");
+  return false;
+}

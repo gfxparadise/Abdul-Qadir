@@ -70,3 +70,8 @@ toggleBtn.onclick = (e) => {
         disableDarkMode();
     }
 }
+
+window.oncontextmenu =function(){ 
+    alert("This operation is not allowed");
+    return false;
+  }
