@@ -33,7 +33,7 @@ body.dark {
     position: fixed;
     top: 20px;
     right: 6px;
-    z-index: 1;
+    z-index: 1000;
 }
 
 #toggle-btn.fa-moon {
@@ -650,6 +650,17 @@ div #img :hover {
     font-size: 11px;
     padding: 9px 11px;
     margin: 3px;
+  }
+
+  .btn{
+    font-size: 10px;
+    padding: 7px 9px;
+    margin: 2px;
+  }
+ 
+  .Logo .box-container .box {
+    flex: 260px;
+    height: 280px;
   }
 
   .experience .box-container .box {

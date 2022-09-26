@@ -287,7 +287,7 @@ header .follow a:hover {
 
 .about .row-1 .content p {
     color: var(--black);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: .5rem 0;
 }
 
@@ -304,6 +304,7 @@ header .follow a:hover {
 
 .about .row-1 .content .box-container .box span {
     color: var(--main-color);
+    font-weight: bold;
 }
 
 .about .row-2 {
@@ -654,6 +655,17 @@ header .follow a:hover {
     header {
         width: 100%;
     }
+
+    .btn{
+        font-size: 10px;
+        padding: 7px 9px;
+        margin: 2px;
+      }
+     
+      .Logo .box-container .box {
+        flex: 260px;
+        height: 280px;
+      }
 
     .experience .box-container .box {
         padding-right: 0;

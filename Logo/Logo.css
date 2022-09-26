@@ -33,7 +33,7 @@ body.dark {
     position: fixed;
     top: 20px;
     right: 6px;
-    z-index: 1;
+    z-index: 1000;
 }
 
 #toggle-btn.fa-moon {
@@ -631,9 +631,15 @@ div #img :hover {
 @media (max-width: 670px) {
   .btn{
     font-size: 15px;
-    padding: 11px 15px;
+    padding: 10px 14px;
     margin: 4.5px;
   }
+.Logo .box-container .box{
+
+  margin:auto;
+}
+
+
 }
 
 @media (max-width:450px) {
@@ -647,9 +653,14 @@ div #img :hover {
   }
   
   .btn{
-    font-size: 11px;
-    padding: 9px 11px;
-    margin: 3px;
+    font-size: 10px;
+    padding: 7px 9px;
+    margin: 2px;
+  }
+ 
+  .Logo .box-container .box {
+    flex: 260px;
+    height: 280px;
   }
 
   .experience .box-container .box {
