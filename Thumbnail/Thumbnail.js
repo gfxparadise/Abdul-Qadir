@@ -1858,7 +1858,7 @@ function closeNav() {
 }
 
 
-// window.oncontextmenu =function(){ 
-//   alert("This operation is not allowed");
-//   return false;
-// }
+window.oncontextmenu =function(){ 
+  alert("This operation is not allowed");
+  return false;
+}

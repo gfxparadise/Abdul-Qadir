@@ -411,6 +411,15 @@ header .follow a:hover {
     }
 }
 
+@keyframes fillBars{
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }
+
 .about .row-2 .box-container {
     flex: 1 1 40rem;
     display: flex;
@@ -706,6 +715,9 @@ form button{
         min-height: 0vh;
     }
 }
+
+
+
 
 
 
