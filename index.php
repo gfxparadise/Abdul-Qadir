@@ -76,7 +76,7 @@ if (mail($to_email, $subject, $body, $headers)) {
 
         <nav class="navbar">
             <a href="#home"><i class="fa fa-home" style="color: #14a800"></i> home</a>
-            <a href="#about"><i class="fa fa-user" style="color: #14a800"></i> about</a>
+            <a href="#about"><i class="fa fa-user" style="color: #14a800"></i> abou</a>
             <a href="#service"><i class="fa fa-list " style="color: #14a800"></i> service</a>
             <a href="#portfolio"><i class="fa fa-briefcase" style="color: #14a800"></i> portfolio</a>
             <a href="#contact"><i class="fa fa-comment" style="color: #14a800"></i> contact</a>
