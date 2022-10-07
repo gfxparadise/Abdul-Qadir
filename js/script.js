@@ -96,20 +96,3 @@ valueDisplays.forEach((valueDisplay) => {
   }, duration);
 });
 
-// Email sender
-
-var form = document.getElementById("my-form");
-      var status = document.getElementById("my-form-status");
-        if (response.ok) {
-         alert('message has been send to <b> GFX Paradise <b>')
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
-            }
-          })
-        }
-    form.addEventListener("submit", handleSubmit)
