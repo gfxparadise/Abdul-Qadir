@@ -327,13 +327,14 @@
         <div class="row">
 
             <form id="my-form" action="https://formspree.io/f/mzbwgnbw" method="POST">
-                <label>Email:</label>
-                <input type="email" name="email" />
-                <label>Message:</label>
-                <input type="text" name="message" />
+                <h3>Get In Touch</h3>
+                <input type="text" id="name" name = 'name' placeholder="Your Name" required>
+                <input type="email" id="email" name = 'email' placeholder="email id" required>
+                <input type="Contact Number" id="phone" name = 'phone' placeholder="Phone Number" required>
+                <textarea id="message" rows="10" name = 'message' placeholder="How can we help you" ></textarea>
                 <button id="my-form-button">Submit</button>
                 <p id="my-form-status"></p>
-              </form>
+            </form>
         </div>
 
 
