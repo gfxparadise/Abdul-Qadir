@@ -108,7 +108,7 @@ var form = document.getElementById("my-form");
         method: form.method,
         body: data,
         headers: {
-            'Accept': 'application/json'
+            'Accept': 'application/'
         }
       }).then(response => {
         if (response.ok) {
