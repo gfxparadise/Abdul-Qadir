@@ -1,39 +1,3 @@
-<!-- <?php
-
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $message = $_POST['message'];
-    $to_email = "abdul.qadir.avadia@gmail.com";
-    $subject = "contact from gFX paradise";
-$body = "foolowing person contacted<br>
-$name <br>
-$email <br>
-$phone <br>
-$message
-";
-$headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-$headers .= 'From: gfx.paradise.official@gmail.com' . "\r\n";
-
-
-
-
-if (mail($to_email, $subject, $body, $headers)) {
-    ?>
-    <script>alert('message has been sent to '+'<?php echo $to_email;?>'); </script>
-
-  <?php
-} else {
-    
-    echo '<script> alert("Email sending failed...") </script>' ;
-}
-
-}
-
-?>  -->
-
 
 
 <!DOCTYPE html>
@@ -362,13 +326,14 @@ if (mail($to_email, $subject, $body, $headers)) {
 
         <div class="row">
 
-            <form action = "index.php" method = 'POST'>
+            <form id="my-form" action="https://formspree.io/f/mzbwgnbw" method="POST">
                 <h3>Get In Touch</h3>
                 <input type="text" id="name" name = 'name' placeholder="Your Name" required>
                 <input type="email" id="email" name = 'email' placeholder="email id" required>
                 <input type="Contact Number" id="phone" name = 'phone' placeholder="Phone Number" required>
                 <textarea id="message" rows="10" name = 'message' placeholder="How can we help you" ></textarea>
-                <button type="submit">Send</button>
+                <button id="my-form-button">Submit</button>
+                <p id="my-form-status"></p>
             </form>
         </div>
 
