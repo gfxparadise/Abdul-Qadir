@@ -99,17 +99,11 @@ valueDisplays.forEach((valueDisplay) => {
 // Email sender
 
 var form = document.getElementById("my-form");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
       var status = document.getElementById("my-form-status");
       var data = new FormData(event.target);
       fetch(event.target.action, {
         method: form.method,
         body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
       }).then(response => {
         if (response.ok) {
          alert('message has been send to <b> GFX Paradise <b>')
@@ -126,5 +120,4 @@ var form = document.getElementById("my-form");
       }).catch(error => {
         alert('Oops! There was a problem submitting your form')
       });
-    }
     form.addEventListener("submit", handleSubmit)
