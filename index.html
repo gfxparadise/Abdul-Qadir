@@ -1,17 +1,16 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta name="google-site-verification" content="hPBT1LylWvPg9aEgva-WeHu_ZTd_RjA9VAVAvHPFXHk" />
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="GFX Paradise" content="Welcometo GFX Paradise">
 
-    <meta name="keywords" content="gfx Paradise, gfx, paradise,  graphic design, portfolio, graphic designing, gfxparadise">
+    <meta name="keywords"
+        content="gfx Paradise, gfx, paradise,  graphic design, portfolio, graphic designing, gfxparadise">
 
     <meta name="robots" content="INDEX, FOLLOW">
     <title>GFX Paradise</title>
@@ -26,7 +25,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-   
+
 </head>
 
 <body>
@@ -77,7 +76,7 @@
             <h4 class="info"> I am a <span class="typing">Graphic Designer</span> </h4>
             <p class="text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quidem excepturi natus iste
                 ut. Alias, quod? Earum pariatur obcaecati dolorum! </p>
-            <a href="#about" class="btn">about me</a>
+            <a href="#about" class="bn">about me</a>
         </div>
 
         <div class="image">
@@ -96,7 +95,7 @@
         <div class="row-1">
 
             <div class="image">
-                <img src="images/img-8.png" alt="">
+                <img src="images/img-8.jpg" alt="">
             </div>
 
             <div class="content">
@@ -131,7 +130,7 @@
             <a href="#" class="bn">download CV</a>
             <a href="#" class="bn">hire me</a>
         </center>
-<br>
+        <br>
         <h1 class="heading"> <span> my </span> skills </h1>
 
         <div class="row-2">
@@ -337,17 +336,19 @@
 
             <form id="my-form" action="https://formspree.io/f/xzbwgnzw" method="POST">
                 <h3>Get In Touch</h3>
-                <input type="text" id="name" name = 'name' placeholder="Your Name" required>
-                <input type="email" id="email" name = 'email' placeholder="email id" required>
-                <input type="Contact Number" id="phone" name = 'phone' placeholder="Phone Number" required>
-                <textarea id="message" rows="10" name = 'message' placeholder="How can we help you" ></textarea>
-                <button id="my-form-button">Submit</button>
+                <input type="text" id="name" name='name' placeholder="Your Name" required>
+                <input type="email" class="email" id="email" name='email' placeholder="email id" onkeyup="validate()"
+                    required>
+                <span id="text"></span>
+                <input type="Contact Number" id="phone" name='phone' placeholder="Phone Number" required>
+                <textarea id="message" rows="10" name='message' placeholder="How can we help you"></textarea>
+                <button class="bn" id="my-form-button">Submit</button>
                 <p id="my-form-status"></p>
             </form>
         </div>
 
 
-        
+
     </section>
     <!-- contact section ends -->
 

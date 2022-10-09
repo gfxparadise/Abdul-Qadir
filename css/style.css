@@ -3,7 +3,7 @@
 
 
 :root {
-    --white: hsl(115, 79%, 94%);
+    --white: hsl(109, 44%, 85%);
     --black: #181818;
 }
 
@@ -114,9 +114,10 @@ section {
 
 .bn:hover {
     background: #181818;
-    border: 2px solid #333;
+    border: 2px solid var(--main-color);
     border-radius: 2.5rem;
     letter-spacing: .2rem;
+    box-shadow: 0 0 40px #1aff00 ;
 }
 
 header {
@@ -617,6 +618,8 @@ form {
     border-radius: 10px;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
+
+
 form h3{
     color: #555;
     font-weight: 800;
@@ -635,6 +638,18 @@ form input, form textarea{
     font-size: 14px;
     border-radius: 10px;
     text-transform: none;
+}
+#my-form.invalid .email::before
+{
+content:'';
+position: absolute;
+right: 0;
+top: 12px;
+width: 24px;
+height: 24px;
+background: url(invalid.png);
+background-size: cover;
+
 }
 
 form button{
