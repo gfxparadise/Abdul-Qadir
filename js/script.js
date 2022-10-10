@@ -95,7 +95,7 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 });
-
+// Email validation
 function validate(){
     let form = document.getElementById('my-form');
     let email = document.getElementById('email').value;

@@ -1857,7 +1857,7 @@ function closeNav() {
   document.getElementById("menu-bars1").style.opacity="100";
 }
 
-// window.oncontextmenu =function(){ 
-//   alert("This operation is not allowed");
-//   return false;
-// }
+window.oncontextmenu =function(){ 
+  alert("This operation is not allowed");
+  return false;
+}
