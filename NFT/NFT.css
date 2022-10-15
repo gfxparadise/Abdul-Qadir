@@ -702,8 +702,8 @@ div #img :hover {
   }
  
   .Logo .box-container .box {
-    flex: 260px;
-    height: 280px;
+    flex: 150px;
+    height: 150px;
   }
 
   .experience .box-container .box {

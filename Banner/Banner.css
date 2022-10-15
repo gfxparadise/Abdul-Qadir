@@ -280,7 +280,7 @@ body {
   height: 200px;
   position: relative;
   overflow: hidden;
-  border: 1.2rem solid #14a800;
+  border: 1.4rem solid #14a800;
   border-style: double;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
   background: #fff;
@@ -697,8 +697,8 @@ div #img :hover {
   }
  
   .Logo .box-container .box {
-    flex: 260px;
-    height: 340px;
+    flex: 240px;
+    height: 140px;
   }
 
   .experience .box-container .box {
