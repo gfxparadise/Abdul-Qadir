@@ -101,7 +101,7 @@ section {
     letter-spacing: .2rem;
 }
 
-.bn {
+.bn, .bu {
     display: inline-block;
     margin-top: 1rem;
     padding: .8rem 3rem;
@@ -113,6 +113,14 @@ section {
 }
 
 .bn:hover {
+    background: #181818;
+    border: 2px solid var(--main-color);
+    border-radius: 2.5rem;
+    letter-spacing: .2rem;
+    box-shadow: 0 0 40px #1aff00;
+}
+
+.bu:hover {
     background: #181818;
     border: 2px solid var(--main-color);
     border-radius: 2.5rem;
@@ -728,7 +736,13 @@ button:hover {
 
 
 
+/* media queries  */
+@media (max-width:1500px) {
 
+    .about .row-2 .box-container .box {
+        flex: 1 1 18rem;
+    }
+}
 
 
 

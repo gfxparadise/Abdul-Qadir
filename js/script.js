@@ -123,3 +123,13 @@ function validate(){
         text.innerHTML = "";
     }
 }
+
+$(document).ready(function(){
+    $('.bu').click(function(){
+        $('.popup_box').css({"opacity" : "1", "pointer-event":"auto"});
+    });
+    $('.bn').click(function(){
+        $('.popup_box').css({"opacity" : "0", "pointer-events":"none"
+        });
+    });
+});
