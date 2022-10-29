@@ -101,7 +101,8 @@ section {
     letter-spacing: .2rem;
 }
 
-.bn, .bu {
+.bn,
+.bu {
     display: inline-block;
     margin-top: 1rem;
     padding: .8rem 3rem;
@@ -351,6 +352,43 @@ header .follow a:hover {
     flex-wrap: wrap;
     gap: 1.5rem;
     align-items: center;
+}
+
+.modal_gfx {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+
+.modal_gfx .modal-con {
+    background: white;
+    width: 500px;
+    max-width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+
+}
+
+h5 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p{
+    text-transform: none;
+    font-size: medium;
 }
 
 .about .row-2 .skills {
@@ -643,11 +681,11 @@ header .follow a:hover {
 
 @keyframes animate {
     0% {
-         transform: translate(-50%,-50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg);
     }
 
     100% {
-        transform: translate(-50%,-50%)  rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
 
@@ -733,7 +771,27 @@ button:hover {
 
 
 
+.modal-con .x {
+    position: absolute;
+    right: 15px;
+    top: 2px;
+    font-size: 25px;
+font-weight: 600;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: black;
+}
 
+.activity {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-gfx.activity .modal-con {
+    transform: translateY(0px);
+}
 
 
 /* media queries  */

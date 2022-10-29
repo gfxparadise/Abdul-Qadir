@@ -1,12 +1,12 @@
 let menu = document.querySelector('#menu-bars');
 let header = document.querySelector('header');
 
-menu.onclick = () =>{
+menu.onclick = () => {
     menu.classList.toggle('fa-times');
     header.classList.toggle('active');
 }
 
-window.onscroll = () =>{
+window.onscroll = () => {
     menu.classList.remove('fa-times');
     header.classList.remove('active');
 }
@@ -73,63 +73,74 @@ toggleBtn.onclick = (e) => {
 
 // Disable Right Click
 
-window.oncontextmenu =function(){ 
+window.oncontextmenu = function () {
     alert("This operation is not allowed");
     return false;
-  }
+}
 
 // Skill Bar Animation
 
-  let valueDisplays = document.querySelectorAll(".num");
+let valueDisplays = document.querySelectorAll(".num");
 let interval = 4000;
 
 valueDisplays.forEach((valueDisplay) => {
-  let startValue = 0;
-  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-  let duration = Math.floor(interval / endValue);
-  let counter = setInterval(function () {
-    startValue += 1;
-    valueDisplay.textContent = startValue;
-    if (startValue == endValue) {
-      clearInterval(counter);
-    }
-  }, duration);
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function () {
+        startValue += 1;
+        valueDisplay.textContent = startValue;
+        if (startValue == endValue) {
+            clearInterval(counter);
+        }
+    }, duration);
 });
 // Email validation
-function validate(){
+function validate() {
     let form = document.getElementById('my-form');
     let email = document.getElementById('email').value;
     let text = document.getElementById('text');
     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-    if(email.match(pattern))
-    {
+    if (email.match(pattern)) {
         form.classList.add('valid');
         form.classList.remove('invalid');
-    text.innerHTML = "Your Email Adderss is Valid.";
-    text.style.color = "#4caf50";
+        text.innerHTML = "Your Email Adderss is Valid.";
+        text.style.color = "#4caf50";
     }
-    else
-    {
+    else {
         form.classList.remove('valid');
         form.classList.add('invalid');
         text.innerHTML = "Please Enter Valid Email Address";
         text.style.color = "#f44336";
     }
-    if (email == "")
-    {
+    if (email == "") {
         form.classList.remove('valid')
         form.classList.remove('invalid');
         text.innerHTML = "";
     }
 }
 
-$(document).ready(function(){
-    $('.bu').click(function(){
-        $('.popup_box').css({"opacity" : "1", "pointer-event":"auto"});
-    });
-    $('.bn').click(function(){
-        $('.popup_box').css({"opacity" : "0", "pointer-events":"none"
-        });
-    });
+const trigger = document.querySelector('#trigger');
+const modalgfx = document.querySelector('.modal_gfx');
+const closeBtn = document.querySelector('.x');
+
+trigger.addEventListener('click', function () {
+    modalgfx.classList.add('activity')
+
+});
+
+closeBtn.addEventListener('click', function () {
+    modalgfx.classList.remove('activity');
+});
+
+modalgfx.addEventListener('click', function (e) {
+    if (e.target !== this) return;
+    modalgfx.classList.remove('activity');
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+        modalgfx.classList.remove('activity');
+    }
 });
