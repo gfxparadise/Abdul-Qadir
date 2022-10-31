@@ -36,12 +36,13 @@ document.querySelectorAll('a').forEach(links => {
 
 // typing animation
 var typed = new Typed(".typing", {
-    strings: ["", "Graphic Designer", "Youtuber", "Video Editor"],
+    strings: ["", "Graphic Designer", "Youtuber", "Video Editor", "Front End Developer"],
     typespeed: 100,
     backspeed: 60,
     loop: true
 })
 
+// DarkMode 
 let toggleBtn = document.getElementById('toggle-btn');
 let body = document.body;
 let darkMode = localStorage.getItem('dark-mode');
@@ -72,14 +73,12 @@ toggleBtn.onclick = (e) => {
 }
 
 // Disable Right Click
-
 window.oncontextmenu = function () {
     alert("This operation is not allowed");
     return false;
 }
 
 // Skill Bar Animation
-
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 4000;
 
@@ -95,6 +94,7 @@ valueDisplays.forEach((valueDisplay) => {
         }
     }, duration);
 });
+
 // Email validation
 function validate() {
     let form = document.getElementById('my-form');
@@ -121,6 +121,7 @@ function validate() {
     }
 }
 
+// Hire Me Modal 
 const trigger = document.querySelector('#trigger');
 const modalgfx = document.querySelector('.modal_gfx');
 const closeBtn = document.querySelector('.x');
