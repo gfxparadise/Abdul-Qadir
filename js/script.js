@@ -145,3 +145,18 @@ document.addEventListener('keydown', function (e) {
         modalgfx.classList.remove('activity');
     }
 });
+
+// Load More Functionality by JQuery
+$(document).ready(function() {
+    $(".img-area").slice(0, 6).show();
+    if ($(".img-area:hidden").length != 0) {
+        $("#load-more").show();
+    }
+    $("#load-more").on("click", function(e) {
+        e.preventDefault();
+        $(".img-area:hidden").slice(0, 3).slideDown();
+        if ($(".img-area:hidden").length == 0) {
+            $("#load-more").text("No More to view").fadOut("slow");
+        }
+    });
+})

@@ -3,7 +3,7 @@
 
 
 :root {
-    --white: hsl(109, 44%, 85%);
+    --white: hsl(109, 50%, 88%);
     --black: #181818;
 }
 
@@ -551,6 +551,7 @@ p{
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     background: #fff;
     border-radius: .5rem;
+    display: none;
 }
 
 .portfolio .box-container .img-area img {
@@ -791,6 +792,7 @@ font-weight: 600;
 .modal-gfx.activity .modal-con {
     transform: translateY(0px);
 }
+
 
 
 /* media queries  */
