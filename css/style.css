@@ -793,14 +793,29 @@ button:hover {
 
 
 /* media queries  */
-@media (max-width:1500px) {
+@media (max-width:1700px) {
+
+    html {
+        font-size: 75%;
+    }
 
     .about .row-2 .box-container .box {
-        flex: 1 1 18rem;
+        flex: 1 1 20rem;
     }
+    
 }
 
+@media (max-width:1500px) {
 
+    html {
+        font-size: 60%;
+    }
+
+    .about .row-2 .box-container .box {
+        flex: 1 1 20rem;
+    }
+    
+}
 
 
 
