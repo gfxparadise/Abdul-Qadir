@@ -159,4 +159,4 @@ $(document).ready(function() {
             $("#load-more").text("No More to view");
         }
     });
-})
+});
