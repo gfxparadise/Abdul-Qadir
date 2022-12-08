@@ -731,7 +731,6 @@ form textarea {
     height: 24px;
     background: url(invalid.png);
     background-size: cover;
-
 }
 
 form button {
@@ -775,7 +774,7 @@ button:hover {
     right: 15px;
     top: 2px;
     font-size: 25px;
-font-weight: 600;
+    font-weight: 600;
     background: none;
     border: none;
     outline: none;
@@ -791,7 +790,6 @@ font-weight: 600;
 .modal-gfx.activity .modal-con {
     transform: translateY(0px);
 }
-
 
 
 /* media queries  */
