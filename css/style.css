@@ -805,10 +805,10 @@ button:hover {
     
 }
 
-@media (max-width:1500px) {
+@media (max-width:1600px) {
 
     html {
-        font-size: 60%;
+        font-size: 75%;
     }
 
     .about .row-2 .box-container .box {
