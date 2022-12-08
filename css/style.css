@@ -796,7 +796,7 @@ button:hover {
 @media (max-width:1900px) {
 
     html {
-        font-size: 80%;
+        font-size: 70%;
     }
 
     .about .row-2 .box-container .box {
@@ -815,6 +815,10 @@ button:hover {
         flex: 1 1 20rem;
     }
     
+    form {
+        padding: 1.2rem 2.4rem;
+    }
+
 }
 
 
