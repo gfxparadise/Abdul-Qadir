@@ -793,10 +793,10 @@ button:hover {
 
 
 /* media queries  */
-@media (max-width:1700px) {
+@media (max-width:1900px) {
 
     html {
-        font-size: 75%;
+        font-size: 120%;
     }
 
     .about .row-2 .box-container .box {
