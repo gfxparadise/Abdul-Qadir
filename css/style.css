@@ -311,14 +311,14 @@ header .follow a:hover {
 
 .about .row-1 .content h3 {
     color: var(--black);
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: none;
 
 }
 
 .about .row-1 .content p {
     color: var(--black);
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     padding: .5rem 0;
     text-transform: none;
 }
@@ -326,7 +326,7 @@ header .follow a:hover {
 .about .row-1 .content .box-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1.4rem;
     padding: 0.5rem 0;
 }
 
@@ -336,7 +336,7 @@ header .follow a:hover {
 
 .about .row-1 .content .box-container .box p {
     color: var(--black);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: .5rem 0;
     text-transform: none;
 
