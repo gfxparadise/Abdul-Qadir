@@ -286,7 +286,7 @@ header .follow a:hover {
 }
 
 .home .image .animate {
-    animation: zoom 4s ease-in-out infinite alternate;
+    animation: zoom 3s ease-in-out infinite alternate;
     transform-origin: center center;
 }
 
@@ -318,7 +318,7 @@ header .follow a:hover {
     /* border: 1rem solid #fff;
     border-radius: .5rem; */
     /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); */
-    animation: vibrate 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    animation: vibrate 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
     transform-origin: center center;
 }
 
