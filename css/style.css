@@ -845,51 +845,7 @@ button:hover {
     }
 }
 
-/* Testimonial section styles */
-.testimonials {
-  padding: 2rem;
-}
 
-.testimonial {
-  background-color: var(--black);
-  color: var(--white);
-  border-radius: 1rem;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial p {
-  font-size: 1.6rem;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-.testimonial .author {
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.testimonial .author img {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  margin-right: 1rem;
-}
-
-.testimonial .author h4 {
-  font-size: 1.8rem;
-}
-
-.testimonial.dark {
-  background-color: var(--white);
-  color: var(--black);
-}
-
-.testimonial.dark .author h4 {
-  color: var(--main-color);
-}
 
 
 
