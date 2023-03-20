@@ -121,6 +121,33 @@ function validate() {
     }
 }
 
+
+
+$(document).ready(function() {
+    // Enable sliding between testimonials
+    $(".testimonial-carousel").on("scroll", function() {
+      var scrollLeft = $(this).scrollLeft();
+      $(this).find(".testimonial").each(function() {
+        var offsetLeft = $(this).offset().left - $(this).parent().offset().left;
+        if (scrollLeft >= offsetLeft && scrollLeft < offsetLeft + $(this).outerWidth()) {
+          $(this).addClass("active");
+        } else {
+          $(this).removeClass("active");
+        }
+      });
+    });
+
+    $(".testimonial").click(function() {
+      $(this).siblings().removeClass("active");
+      $(this).addClass("active");
+      var scrollLeft = $(this).offset().left - $(this).parent().offset().left + ($(this).outerWidth() - $(this).parent().outerWidth()) / 2;
+      $(".testimonial-carousel").animate({
+        scrollLeft: scrollLeft
+      }, 500);
+    });
+  });
+
+
 // Hire Me Modal 
 const trigger = document.querySelector('#trigger');
 const modalgfx = document.querySelector('.modal_gfx');
@@ -145,6 +172,8 @@ document.addEventListener('keydown', function (e) {
         modalgfx.classList.remove('activity');
     }
 });
+
+
 
 // Load More Functionality by JQuery
 $(document).ready(function() {
