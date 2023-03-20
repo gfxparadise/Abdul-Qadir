@@ -835,9 +835,6 @@ button:hover {
     transform: translateY(0px);
 }
 
-p {
-   font-size: large; 
-}
 
 /* media queries  */
 @media (max-width:1500px) {
@@ -893,7 +890,7 @@ p {
 @media (max-width:450px) {
 
     html {
-        font-size: 45%;
+        font-size: 50%;
     }
 
     header {
