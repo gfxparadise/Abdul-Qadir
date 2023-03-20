@@ -835,6 +835,9 @@ button:hover {
     transform: translateY(0px);
 }
 
+p {
+   font-size: medium; 
+}
 
 /* media queries  */
 @media (max-width:1500px) {
