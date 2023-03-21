@@ -42,6 +42,57 @@ var typed = new Typed(".typing", {
     loop: true
 })
 
+    // // Get all slides
+    // var slides = $(".slider-container .slide");
+
+    // // Set initial slide to 0
+    // var currentSlide = 0;
+
+    // // Hide all slides except the first one
+    // slides.hide();
+    // slides.eq(currentSlide).show();
+
+    // // Create dot indicators
+    // var dotContainer = $(".slider-dots");
+    // for (var i = 0; i < slides.length; i++) {
+    //     dotContainer.append("<span class='dot' data-slide='" + i + "'></span>");
+    // }
+
+    // // Set initial dot to active
+    // var dots = $(".slider-dots .dot");
+    // dots.eq(currentSlide).addClass("active");
+
+    // // Click event for dot indicators
+    // dots.click(function() {
+    //     // Get slide index from data attribute
+    //     var index = $(this).data("slide");
+
+    //     // Hide current slide
+    //     slides.eq(currentSlide).hide();
+
+    //     // Remove active class from current dot
+    //     dots.eq(currentSlide).removeClass("active");
+
+    //     // Show new slide
+    //     slides.eq(index).show();
+
+    //     // Add active class to new dot
+    //     dots.eq(index).addClass("active");
+
+    //     // Update current slide
+    //     currentSlide = index;
+    // });
+
+    // // Automatic slide change
+    // setInterval(function() {
+    //     // Get next slide index
+    //     var nextSlide = (currentSlide + 1) % slides.length;
+
+    //     // Trigger click event on corresponding dot
+    //     dots.eq(nextSlide).click();
+    // }, 3000);
+
+
 // DarkMode 
 let toggleBtn = document.getElementById('toggle-btn');
 let body = document.body;

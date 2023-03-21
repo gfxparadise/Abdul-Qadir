@@ -836,6 +836,105 @@ button:hover {
 }
 
 
+/* 
+.testimonial .box-container {
+    display: flex;
+    flex-wrap: initial;
+    gap: 1.5rem;
+}
+
+.testimonial .box-container .box {
+    flex: 1 1 30rem;
+    text-align: center;
+    padding: 2rem;
+    background: #181818;
+    border: 2px solid #333;
+    border-radius: 2.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial .box-container .box:hover {
+    transform: translateY(-0.5rem);
+}
+
+.testimonial .box-container .box .rating {
+    color: #FFC107;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.testimonial .box-container .box .rating i {
+    margin-right: 0.5rem;
+}
+
+
+.testimonial .box-container .box img {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.4rem;
+    color: white;
+    border: var(--main-color);
+    border-radius: 50%;
+}
+
+.testimonial .box-container .box h3 {
+    color: white;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.testimonial .box-container .box p {
+    color: white;
+    font-size: 1.6rem;
+    padding-top: .5rem;
+    text-transform: none;
+}
+
+.testimonial .slider-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.testimonial .slider-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.testimonial .slider-btn:hover {
+    background-color: #555;
+}
+
+.testimonial .slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .testimonial .slider-dots .slider-dot {
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background-color: #333;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .testimonial .slider-dots .slider-dot.active {
+    background-color: #FFC107;
+  } */
+  
 
 /* media queries  */
 @media (max-width:1500px) {
