@@ -42,56 +42,6 @@ var typed = new Typed(".typing", {
     loop: true
 })
 
-    // // Get all slides
-    // var slides = $(".slider-container .slide");
-
-    // // Set initial slide to 0
-    // var currentSlide = 0;
-
-    // // Hide all slides except the first one
-    // slides.hide();
-    // slides.eq(currentSlide).show();
-
-    // // Create dot indicators
-    // var dotContainer = $(".slider-dots");
-    // for (var i = 0; i < slides.length; i++) {
-    //     dotContainer.append("<span class='dot' data-slide='" + i + "'></span>");
-    // }
-
-    // // Set initial dot to active
-    // var dots = $(".slider-dots .dot");
-    // dots.eq(currentSlide).addClass("active");
-
-    // // Click event for dot indicators
-    // dots.click(function() {
-    //     // Get slide index from data attribute
-    //     var index = $(this).data("slide");
-
-    //     // Hide current slide
-    //     slides.eq(currentSlide).hide();
-
-    //     // Remove active class from current dot
-    //     dots.eq(currentSlide).removeClass("active");
-
-    //     // Show new slide
-    //     slides.eq(index).show();
-
-    //     // Add active class to new dot
-    //     dots.eq(index).addClass("active");
-
-    //     // Update current slide
-    //     currentSlide = index;
-    // });
-
-    // // Automatic slide change
-    // setInterval(function() {
-    //     // Get next slide index
-    //     var nextSlide = (currentSlide + 1) % slides.length;
-
-    //     // Trigger click event on corresponding dot
-    //     dots.eq(nextSlide).click();
-    // }, 3000);
-
 
 // DarkMode 
 let toggleBtn = document.getElementById('toggle-btn');
@@ -145,6 +95,66 @@ valueDisplays.forEach((valueDisplay) => {
         }
     }, duration);
 });
+
+// // Testimonial Slider 
+// $(document).ready(function () {
+//     // Set variables
+//     var slider = $(".box-containe");
+//     var sliderItems = slider.find(".bo");
+//     var sliderNext = $(".slider-btn-next");
+//     var sliderDots = $(".slider-dots");
+//     var dot = sliderDots.find(".slider-dot");
+
+//     // Set initial values
+//     var currentSlide = 0;
+//     var slideCount = sliderItems.length;
+
+//     // Hide all slides except the first three
+//     sliderItems.slice(2).hide();
+//     sliderItems.eq(currentSlide).show();
+//     dot.eq(currentSlide).addClass("active");
+
+//     // Handle next button click event
+//     function showNextSlide() {
+//         currentSlide++;
+//         if (currentSlide >= slideCount) {
+//             currentSlide = 0;
+//         }
+
+//         // Hide all slides except the current and the next one
+//         sliderItems.hide();
+//         var nextSlide = currentSlide + 1;
+//         if (nextSlide >= slideCount) {
+//             nextSlide = 0;
+//         }
+//         sliderItems.eq(currentSlide).show();
+//         sliderItems.eq(nextSlide).show();
+
+//         dot.removeClass("active");
+//         dot.eq(currentSlide).addClass("active");
+//     }
+
+
+//     // Handle slider dots click event
+//     dot.click(function () {
+//         currentSlide = $(this).index();
+//         sliderItems.hide();
+//         sliderItems.slice(currentSlide, currentSlide + 2).show();
+//         dot.removeClass("active");
+//         dot.eq(currentSlide).addClass("active");
+//     });
+
+//     // Handle automatic slide change every 4 seconds
+//     setInterval(showNextSlide, 4000);
+
+//     // Handle next button click event
+//     sliderNext.click(function () {
+//         showNextSlide();
+//     });
+// });
+
+
+
 
 // Email validation
 function validate() {
@@ -201,12 +211,12 @@ document.addEventListener('keydown', function (e) {
 
 
 // Load More Functionality by JQuery
-$(document).ready(function() {
+$(document).ready(function () {
     $(".img-area").slice(6, 15).hide();
     if ($(".img-area:hidden").length != 0) {
         $("#load-more").show();
     }
-    $("#load-more").on("click", function(e) {
+    $("#load-more").on("click", function (e) {
         e.preventDefault();
         $(".img-area:hidden").slice(0, 3).slideDown();
         if ($(".img-area:hidden").length == 0) {

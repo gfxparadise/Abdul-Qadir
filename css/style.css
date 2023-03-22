@@ -835,40 +835,58 @@ button:hover {
     transform: translateY(0px);
 }
 
-
 /* 
-.testimonial .box-container {
+.testimonial .box-containe {
     display: flex;
     flex-wrap: initial;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 1.5rem;
 }
 
-.testimonial .box-container .box {
+.testimonial .box-containe .bo1 {
     flex: 1 1 30rem;
     text-align: center;
+    height: 60rem;
+    width: 50rem;
     padding: 2rem;
+    border-top: 4px solid var(--main-color);
+    border-bottom: 4px solid var(--main-color);
     background: #181818;
-    border: 2px solid #333;
     border-radius: 2.5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     transition: transform 0.3s ease-in-out;
 }
 
-.testimonial .box-container .box:hover {
+.testimonial .box-containe .bo {
+    flex: 1 1 30rem;
+    text-align: center;
+    height: 60rem;
+    width: 52rem;
+    border: 2px solid #333;
+    background: #181818;
+    border-radius: 2.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.testimonial .box-containe .bo:hover {
     transform: translateY(-0.5rem);
 }
 
-.testimonial .box-container .box .rating {
-    color: #FFC107;
+.testimonial .box-containe .bo .rating {
+    color: var(--main-color);
     margin-bottom: 1rem;
     font-size: 2rem;
 }
-.testimonial .box-container .box .rating i {
+.testimonial .box-containe .bo .rating i {
     margin-right: 0.5rem;
 }
 
 
-.testimonial .box-container .box img {
+.testimonial .box-containe .bo img {
     height: 6rem;
     width: 6rem;
     line-height: 6rem;
@@ -878,18 +896,25 @@ button:hover {
     border-radius: 50%;
 }
 
-.testimonial .box-container .box h3 {
+.testimonial .box-containe .bo h3 {
     color: white;
     font-size: 2rem;
     padding-top: 1rem;
 }
 
-.testimonial .box-container .box p {
+.testimonial .box-containe .bo p {
     color: white;
     font-size: 1.6rem;
     padding-top: .5rem;
+    height: 50rem;
     text-transform: none;
 }
+
+.testimonial .box-containe .bo p .quote {
+    color: var(--main-color);
+    font-size: 4rem;
+}
+
 
 .testimonial .slider-btns {
     display: flex;
@@ -899,19 +924,27 @@ button:hover {
 }
 
 .testimonial .slider-btn {
-    background-color: #333;
-    color: white;
+    color: #fff;
+    background-color: var(--main-color);
     border: none;
-    padding: 1rem;
+    height: 5rem;
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     margin: 0 1rem;
-    font-size: 1.5rem;
+    font-size: 3rem;
     cursor: pointer;
     outline: none;
 }
 
+
 .testimonial .slider-btn:hover {
-    background-color: #555;
+    color: #fff;
+    background-color: #181818;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 40px #1aff00;
 }
 
 .testimonial .slider-dots {
@@ -931,9 +964,15 @@ button:hover {
     transition: background-color 0.3s ease-in-out;
   }
   
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-weight: bold;
+  }
+  
+
   .testimonial .slider-dots .slider-dot.active {
-    background-color: #FFC107;
-  } */
+    background-color: var(--main-color);
+  }  */
   
 
 /* media queries  */
