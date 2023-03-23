@@ -835,7 +835,7 @@ button:hover {
     transform: translateY(0px);
 }
 
-/* 
+
 .testimonial .box-containe {
     display: flex;
     flex-wrap: initial;
@@ -848,11 +848,10 @@ button:hover {
 .testimonial .box-containe .bo1 {
     flex: 1 1 30rem;
     text-align: center;
-    height: 60rem;
-    width: 50rem;
+    height: 55rem;
     padding: 2rem;
-    border-top: 4px solid var(--main-color);
-    border-bottom: 4px solid var(--main-color);
+    border-top: 5px solid var(--main-color);
+    border-bottom: 5px solid var(--main-color);
     background: #181818;
     border-radius: 2.5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -862,11 +861,10 @@ button:hover {
 .testimonial .box-containe .bo {
     flex: 1 1 30rem;
     text-align: center;
-    height: 60rem;
-    width: 52rem;
-    border: 2px solid #333;
-    background: #181818;
-    border-radius: 2.5rem;
+    height: 55rem;
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
+    border-radius: 3rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     transition: transform 0.3s ease-in-out;
 }
@@ -887,14 +885,15 @@ button:hover {
 
 
 .testimonial .box-containe .bo img {
-    height: 6rem;
-    width: 6rem;
+    height: 12rem;
+    width: 12rem;
     line-height: 6rem;
     font-size: 2.4rem;
     color: white;
-    border: var(--main-color);
+    border: 1rem double var(--main-color);
     border-radius: 50%;
 }
+
 
 .testimonial .box-containe .bo h3 {
     color: white;
@@ -906,7 +905,6 @@ button:hover {
     color: white;
     font-size: 1.6rem;
     padding-top: .5rem;
-    height: 50rem;
     text-transform: none;
 }
 
@@ -972,7 +970,7 @@ button:hover {
 
   .testimonial .slider-dots .slider-dot.active {
     background-color: var(--main-color);
-  }  */
+  } 
   
 
 /* media queries  */
