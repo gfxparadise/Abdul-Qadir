@@ -95,8 +95,6 @@ valueDisplays.forEach((valueDisplay) => {
         }
     }, duration);
 });
-
-// Testimonial Slider 
 $(document).ready(function () {
     // Set variables
     var slider = $(".box-containe");
@@ -134,7 +132,6 @@ $(document).ready(function () {
         dot.eq(currentSlide).addClass("active");
     }
 
-
     // Handle slider dots click event
     dot.click(function () {
         currentSlide = $(this).index();
@@ -145,69 +142,65 @@ $(document).ready(function () {
     });
 
     // Handle automatic slide change every 4 seconds
-    setInterval(showNextSlide, 4000);
+    var interval = setInterval(showNextSlide, 4000);
 
     // Handle next button click event
     sliderNext.click(function () {
         showNextSlide();
     });
+
+    // Handle responsive behavior
+    $(window).on("load resize", function() {
+        if ($(window).width() < 768) {
+            // Set initial values
+            currentSlide = 0;
+            slideCount = sliderItems.length;
+    
+            // Hide all slides except the current one
+            sliderItems.slice(1).hide();
+            sliderItems.eq(currentSlide).show();
+            dot.eq(currentSlide).addClass("active");
+    
+            // Handle next button click event
+            function showNextSlideMobile() {
+                currentSlide++;
+                if (currentSlide >= slideCount) {
+                    currentSlide = 0;
+                }
+    
+                // Hide all slides except the next one
+                sliderItems.hide();
+                sliderItems.eq(currentSlide).show();
+    
+                dot.removeClass("active");
+                dot.eq(currentSlide).addClass("active");
+            }
+    
+            // Handle slider dots click event
+            dot.click(function () {
+                currentSlide = $(this).index();
+                sliderItems.hide();
+                sliderItems.eq(currentSlide).show();
+                dot.removeClass("active");
+                dot.eq(currentSlide).addClass("active");
+            });
+    
+            // Handle automatic slide change every 4 seconds
+            clearInterval(interval);
+            interval = setInterval(showNextSlideMobile, 4000);
+    
+            // Handle next button click event
+            sliderNext.off("click").on("click", function () {
+                showNextSlideMobile();
+            });
+        } else {
+            // Clear interval if in desktop view
+            clearInterval(interval);
+        }
+    });
 });
 
-$(document).ready(function () {
-$(window).on("load resize", function() {
-    if ($(window).width() < 768) {
-      $(document).ready(function () {
-        // Set variables
-        var slider = $(".box-containe");
-        var sliderItems = slider.find(".bo");
-        var sliderNext = $(".slider-btn-next");
-        var sliderDots = $(".slider-dots");
-        var dot = sliderDots.find(".slider-dot");
-  
-        // Set initial values
-        var currentSlide = 0;
-        var slideCount = sliderItems.length;
-  
-        // Hide all slides except the current one
-        sliderItems.slice(1).hide();
-        sliderItems.eq(currentSlide).show();
-        dot.eq(currentSlide).addClass("active");
-  
-        // Handle next button click event
-        function showNextSlide() {
-          currentSlide++;
-          if (currentSlide >= slideCount) {
-            currentSlide = 0;
-          }
-  
-          // Hide all slides except the next one
-          sliderItems.hide();
-          sliderItems.eq(currentSlide).show();
-  
-          dot.removeClass("active");
-          dot.eq(currentSlide).addClass("active");
-        }
-  
-        // Handle slider dots click event
-        dot.click(function () {
-          currentSlide = $(this).index();
-          sliderItems.hide();
-          sliderItems.eq(currentSlide).show();
-          dot.removeClass("active");
-          dot.eq(currentSlide).addClass("active");
-        });
-  
-        // Handle automatic slide change every 4 seconds
-        setInterval(showNextSlide, 4000);
-  
-        // Handle next button click event
-        sliderNext.click(function () {
-          showNextSlide();
-        });
-      });
-    }
-  });
-});
+
   
   
 
