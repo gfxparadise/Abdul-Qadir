@@ -972,79 +972,27 @@ button:hover {
     background-color: var(--main-color);
   } 
   
-/* For screens up to 450px wide */
-@media (max-width: 450px) {
-  .testimonial .box-containe {
-    display: block;
+  /* Hide all slides except the first one on small screens */
+@media (max-width: 767px) {
+    .box-containe .bo {
+      display: none;
+    }
+    .box-containe .bo:first-child {
+      display: block;
+    }
   }
-  .testimonial .box-containe .bo,
-  .testimonial .box-containe .bo1 {
-    height: auto;
-    border-radius: 0;
-    border: none;
-    margin-bottom: 2rem;
+  
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 767px) {
+
+  .testimonial .box-containe .bo h3 {
+    font-size: 1.6rem;
   }
-  .testimonial .box-containe .bo img {
-    height: auto;
-    width: 80%;
-    max-width: 12rem;
-    margin: 0 auto;
-  }
-  .testimonial .slider-dots {
-    display: none;
+  .testimonial .box-containe .bo p {
+    font-size: 1.4rem;
   }
 }
-
-/* For screens between 450px and 767px wide */
-@media (min-width: 450px) and (max-width: 767px) {
-  .testimonial .box-containe {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .testimonial .box-containe .bo,
-  .testimonial .box-containe .bo1 {
-    flex-basis: calc(50% - 2rem);
-    height: auto;
-    margin: 1rem;
-  }
-  .testimonial .box-containe .bo img {
-    width: 80%;
-    max-width: 12rem;
-    margin: 0 auto;
-  }
-}
-
-/* For screens between 768px and 991px wide */
-@media (min-width: 768px) and (max-width: 991px) {
-  .testimonial .box-containe {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .testimonial .box-containe .bo,
-  .testimonial .box-containe .bo1 {
-    flex-basis: calc(33.33% - 2rem);
-    height: auto;
-    margin: 1rem;
-  }
-}
-
-/* For screens between 992px and 1500px wide */
-@media (min-width: 992px) and (max-width: 1500px) {
-  .testimonial .box-containe {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .testimonial .box-containe .bo,
-  .testimonial .box-containe .bo1 {
-    flex-basis: calc(25% - 2rem);
-    height: auto;
-    margin: 1rem;
-  }
-}
-
 
 /* media queries  */
 @media (max-width:1500px) {
@@ -1053,11 +1001,6 @@ button:hover {
         flex: 1 1 18rem;
     }
 }
-
-
-
-
-
 
 /* media queries  */
 @media (max-width:991px) {

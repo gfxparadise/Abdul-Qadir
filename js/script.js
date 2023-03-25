@@ -153,6 +153,63 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+$(window).on("load resize", function() {
+    if ($(window).width() < 768) {
+      $(document).ready(function () {
+        // Set variables
+        var slider = $(".box-containe");
+        var sliderItems = slider.find(".bo");
+        var sliderNext = $(".slider-btn-next");
+        var sliderDots = $(".slider-dots");
+        var dot = sliderDots.find(".slider-dot");
+  
+        // Set initial values
+        var currentSlide = 0;
+        var slideCount = sliderItems.length;
+  
+        // Hide all slides except the current one
+        sliderItems.slice(1).hide();
+        sliderItems.eq(currentSlide).show();
+        dot.eq(currentSlide).addClass("active");
+  
+        // Handle next button click event
+        function showNextSlide() {
+          currentSlide++;
+          if (currentSlide >= slideCount) {
+            currentSlide = 0;
+          }
+  
+          // Hide all slides except the next one
+          sliderItems.hide();
+          sliderItems.eq(currentSlide).show();
+  
+          dot.removeClass("active");
+          dot.eq(currentSlide).addClass("active");
+        }
+  
+        // Handle slider dots click event
+        dot.click(function () {
+          currentSlide = $(this).index();
+          sliderItems.hide();
+          sliderItems.eq(currentSlide).show();
+          dot.removeClass("active");
+          dot.eq(currentSlide).addClass("active");
+        });
+  
+        // Handle automatic slide change every 4 seconds
+        setInterval(showNextSlide, 4000);
+  
+        // Handle next button click event
+        sliderNext.click(function () {
+          showNextSlide();
+        });
+      });
+    }
+  });
+});
+  
+  
 
 
 
