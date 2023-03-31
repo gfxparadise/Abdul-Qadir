@@ -201,22 +201,21 @@ $(document).ready(function () {
 });
 
 
-var options = {
-    useEasing: true,
-    useGrouping: true,
-    separator: ',',
-    decimal: '.',
-    prefix: '',
-    suffix: '+'
-};
-var num1 = new CountUp('num1', 0, 3, 0, 5.5, options);
-var num2 = new CountUp('num2', 0, 150, 0, 5.5, options);
-var num3 = new CountUp('num3', 0, 200, 0, 5.5, options);
-var num4 = new CountUp('num4', 0, 4, 0, 5.5, options);
-num1.start();
-num2.start();
-num3.start();
-num4.start();
+        $('.num1').waypoint(function() {
+            $('.num1').animateNumber({ number: 3 }, 2500);
+        }, { offset: '75%' });
+
+        $('.num2').waypoint(function() {
+            $('.num2').animateNumber({ number: 150 }, 2500);
+        }, { offset: '75%' });
+
+        $('.num3').waypoint(function() {
+            $('.num3').animateNumber({ number: 200 }, 2500);
+        }, { offset: '75%' });
+
+        $('.num4').waypoint(function() {
+            $('.num4').animateNumber({ number: 4 }, 2500);
+        }, { offset: '75%' });
 
   
 
