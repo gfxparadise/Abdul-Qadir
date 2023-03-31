@@ -201,22 +201,7 @@ $(document).ready(function () {
 });
 
 
-        $('.num1').waypoint(function() {
-            $('.num1').animateNumber({ number: 3 }, 2500);
-        }, { offset: '75%' });
-
-        $('.num2').waypoint(function() {
-            $('.num2').animateNumber({ number: 150 }, 2500);
-        }, { offset: '75%' });
-
-        $('.num3').waypoint(function() {
-            $('.num3').animateNumber({ number: 200 }, 2500);
-        }, { offset: '75%' });
-
-        $('.num4').waypoint(function() {
-            $('.num4').animateNumber({ number: 4 }, 2500);
-        }, { offset: '75%' });
-
+  
   
 
 
