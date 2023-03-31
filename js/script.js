@@ -209,10 +209,10 @@ var options = {
     prefix: '',
     suffix: '+'
 };
-var num1 = new CountUp('num1', 0, 3, 0, 2.5, options);
-var num2 = new CountUp('num2', 0, 150, 0, 2.5, options);
-var num3 = new CountUp('num3', 0, 200, 0, 2.5, options);
-var num4 = new CountUp('num4', 0, 4, 0, 2.5, options);
+var num1 = new CountUp('num1', 0, 3, 0, 5.5, options);
+var num2 = new CountUp('num2', 0, 150, 0, 5.5, options);
+var num3 = new CountUp('num3', 0, 200, 0, 5.5, options);
+var num4 = new CountUp('num4', 0, 4, 0, 5.5, options);
 num1.start();
 num2.start();
 num3.start();
